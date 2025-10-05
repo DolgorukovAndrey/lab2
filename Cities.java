@@ -18,7 +18,7 @@ public class Cities {
         this.ways = new ArrayList<>(ways);
     }
 
-    public String toStr() {
+    public String toString() {
         String str;
         str = "Город: " + cityName + "\n";
         str += "Дороги: ";

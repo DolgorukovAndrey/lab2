@@ -82,12 +82,12 @@ public class Methods {
         ways1.add(way13);
         Cities city6 = new Cities("F", ways1);
         ways1.clear();
-        System.out.println(city1.toStr());
-        System.out.println(city2.toStr());
-        System.out.println(city3.toStr());
-        System.out.println(city4.toStr());
-        System.out.println(city5.toStr());
-        System.out.println(city6.toStr());
+        System.out.println(city1.toString());
+        System.out.println(city2.toString());
+        System.out.println(city3.toString());
+        System.out.println(city4.toString());
+        System.out.println(city5.toString());
+        System.out.println(city6.toString());
     }
 
     public void task5() {
