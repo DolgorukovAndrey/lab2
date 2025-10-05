@@ -28,6 +28,5 @@ public class Main {
             System.out.print("Введите номер задания от 1 до 3 (для завершения введите 0): ");
             choice = methods.inputInt();
         }
-
     }
 }

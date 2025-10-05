@@ -9,10 +9,18 @@ public class Way {
 
     public Way(String title, int price) {
         this.title = title;
-        this.price = price;
+        if (price >= 0) {
+            this.price = price;
+        }
+        else {
+            System.out.println("Стоимоть не может быть меньше 0 (установлено стандартное значение 0)");
+            this.price = 0;
+
+        }
     }
 
     public String getTitle() {
+
         return title;
     }
 

@@ -82,6 +82,9 @@ public class Fraction {
     }
 
     public Fraction division(Fraction summand1, Fraction summand2, Fraction summ) {
+        if (summand2.numerator == 0) {
+            throw new IllegalArgumentException("Ошибка деления на 0");
+        }
         summ.numerator = summand1.numerator * summand2.denominator;
         summ.denominator = summand1.denominator * summand2.numerator;
         summ.reduction(summ);

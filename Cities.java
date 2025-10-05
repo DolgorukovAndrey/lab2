@@ -1,9 +1,8 @@
-import java.util.List;
 import java.util.ArrayList;
 
 public class Cities {
     private String cityName;
-    private List<Way> ways;
+    private ArrayList<Way> ways;
 
     public Cities() {
         this.ways = new ArrayList<>();
@@ -14,7 +13,7 @@ public class Cities {
         this.ways = new ArrayList<>();
     }
 
-    public Cities(String cityName, List<Way> ways) {
+    public Cities(String cityName, ArrayList<Way> ways) {
         this.cityName = cityName;
         this.ways = new ArrayList<>(ways);
     }
@@ -33,7 +32,7 @@ public class Cities {
         return cityName;
     }
 
-    public List<Way> getWays() {
+    public ArrayList<Way> getWays() {
         return new ArrayList<>(ways);
     }
 
@@ -41,7 +40,7 @@ public class Cities {
         this.cityName = cityName;
     }
 
-    public void setWays(List<Way> ways) {
+    public void setWays(ArrayList<Way> ways) {
         this.ways = new ArrayList<>(ways);
     }
 
