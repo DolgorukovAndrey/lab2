@@ -3,6 +3,24 @@ public class Name {
     private String name;
     private String patronymic;
 
+    public Name(){
+        this.surname = null;
+        this.name = null;
+        this.patronymic = null;
+    }
+
+    public Name(String surname, String name, String patronymic){
+        this.surname = surname;
+        this.name = name;
+        this.patronymic = patronymic;
+    }
+
+    public Name(Name name1){
+        this.surname = name1.surname;
+        this.name = name1.name;
+        this.patronymic = name1.patronymic;
+    }
+
     public void setSurname(String surname) {
         this.surname = surname;
     }
@@ -25,24 +43,6 @@ public class Name {
 
     public String getPatronymic() {
         return patronymic;
-    }
-
-    public Name(){
-        this.surname = null;
-        this.name = null;
-        this.patronymic = null;
-    }
-
-    public Name(String surname, String name, String patronymic){
-        this.surname = surname;
-        this.name = name;
-        this.patronymic = patronymic;
-    }
-
-    public Name(Name name1){
-        this.surname = name1.surname;
-        this.name = name1.name;
-        this.patronymic = name1.patronymic;
     }
 
     @Override

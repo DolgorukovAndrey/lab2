@@ -2,20 +2,6 @@ public class Person extends Name {
 
     private int height;
 
-    public void setHeight(int height) {
-        if (height > 0 && height < 300) {
-            this.height = height;
-        }
-        else {
-            System.out.println("Введён недопустимый рост (установлено значение 0)");
-            this.height = 0;
-        }
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
     public Person() {
         super(null,null,null);
         this.height = 0;
@@ -29,6 +15,20 @@ public class Person extends Name {
     public Person(String surname, String name, String patronymic, int height){
         super(surname,name,patronymic);
         setHeight(height);
+    }
+
+    public void setHeight(int height) {
+        if (height > 0 && height < 300) {
+            this.height = height;
+        }
+        else {
+            System.out.println("Введён недопустимый рост (установлено значение 0)");
+            this.height = 0;
+        }
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     @Override

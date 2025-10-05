@@ -2,6 +2,21 @@ public class Fraction {
     private int numerator;
     private int denominator;
 
+    public Fraction() {
+        this.numerator = 0;
+        this.denominator = 1;
+    }
+
+    public Fraction(int numerator, int denominator) {
+        this.numerator = numerator;
+        this.denominator = denominator;
+    }
+
+    public Fraction(Fraction fraction) {
+        this.numerator = fraction.numerator;
+        this.denominator = fraction.denominator;
+    }
+
     public void setNumerator(int numerator) {
         this.numerator = numerator;
     }
@@ -22,21 +37,6 @@ public class Fraction {
 
     public int getDenominator() {
         return denominator;
-    }
-
-    public Fraction() {
-        this.numerator = 0;
-        this.denominator = 1;
-    }
-
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
-        this.denominator = denominator;
-    }
-
-    public Fraction(Fraction fraction) {
-        this.numerator = fraction.numerator;
-        this.denominator = fraction.denominator;
     }
 
     public void reduction(Fraction fraction) {
