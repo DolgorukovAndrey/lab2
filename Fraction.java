@@ -122,12 +122,10 @@ public class Fraction {
         return summ;
     }
 
-    @Override
     public String toString() {
         if (numerator != 0 && denominator != 0) {
             return numerator + "/" + denominator;
-        }
-        else {
+        } else {
             return "0";
         }
     }

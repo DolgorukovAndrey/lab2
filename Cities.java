@@ -43,6 +43,4 @@ public class Cities {
     public void setWays(ArrayList<Way> ways) {
         this.ways = new ArrayList<>(ways);
     }
-
-
 }

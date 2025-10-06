@@ -20,8 +20,7 @@ public class Person extends Name {
     public void setHeight(int height) {
         if (height > 0 && height < 300) {
             this.height = height;
-        }
-        else {
+        } else {
             System.out.println("Введён недопустимый рост (установлено значение 0)");
             this.height = 0;
         }
@@ -31,7 +30,6 @@ public class Person extends Name {
         return height;
     }
 
-    @Override
     public String toString() {
         return super.toString() + ", рост: " + height;
     }

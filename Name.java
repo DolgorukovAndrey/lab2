@@ -45,7 +45,6 @@ public class Name {
         return patronymic;
     }
 
-    @Override
     public String toString() {
         String str = "";
         if (surname != null) {
@@ -62,8 +61,7 @@ public class Name {
         if (patronymic != null) {
             if (str != "") {
                 str = str + " " + patronymic;
-            }
-            else {
+            } else {
                 str = str + patronymic;
             }
         }
