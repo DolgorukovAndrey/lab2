@@ -20,13 +20,30 @@ public class Methods {
     }
 
     public void task12() {
-        Person person1 = new Person("Клеопатра", 152);
-        Person person2 = new Person("Пушкин", "Александр", "Сергеевич", 167);
-        Person person3 = new Person("Владимир", 189);
-        person3.setSurname("Маяковский");
-        System.out.println(person1.toString());
-        System.out.println(person2.toString());
-        System.out.println(person3.toString());
+        System.out.println("Задание 1.2");
+        Person person11 = new Person("Клеопатра", 152);
+        Person person12 = new Person();
+        person12.setSurname("Пушкин");
+        person12.setHeight(167);
+        Person person13 = new Person("Владимир", 189);
+        System.out.println(person11.toString());
+        System.out.println(person12.toString());
+        System.out.println(person13.toString());
+        System.out.println("Задание 1.3");
+        Name name1 = new Name(null,"Клеопатра",null);
+        Name name2 = new Name("Пушкин","Александр","Сергеевич");
+        Name name3 = new Name("Маяковский","Владимир",null);
+        System.out.println(name1.toString());
+        System.out.println(name2.toString());
+        System.out.println(name3.toString());
+        System.out.println("Задание 2.2");
+        Person person21 = new Person("Клеопатра", 152);
+        Person person22 = new Person("Пушкин", "Александр", "Сергеевич", 167);
+        Person person23 = new Person("Владимир", 189);
+        person23.setSurname("Маяковский");
+        System.out.println(person21.toString());
+        System.out.println(person22.toString());
+        System.out.println(person23.toString());
     }
 
     public void task34() {
